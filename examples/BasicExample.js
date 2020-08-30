@@ -7,10 +7,11 @@ import {
   MenuOption,
   MenuTrigger,
 } from 'react-native-popup-menu';
+import {Entypo} from '@expo/vector-icons';
 
 const BasicExample = () => (
   <MenuProvider style={{flexDirection: 'column', padding: 30}}>
-    <Text>Hello world!</Text>
+    <Entypo name="triangle-down"/>
     <Menu onSelect={value => alert(`Selected number: ${value}`)}>
       <MenuTrigger text='Select option' />
       <MenuOptions>
